@@ -1,9 +1,8 @@
 # Cifra de César em Python
-
 Este projeto implementa a clássica **Cifra de César** utilizando a linguagem Pyhton. Desenvolvido como parte dos meus estudos fundamentais em **Segurança da Informação**, o script demonstra como funciona a manipulação de dados em baixo nivel através da tabela ASCII.
 
 ## Tecnologias Utilizadas:
--**Python 3** (Lógica de programação, laços de repetição e condicionais)
+-**Python 3** (Lógica de programação,laços de repetição e condicionais)
 -**Git e GitHub** (Controle de versão e portfólio)
 
 ## Como Funciona
