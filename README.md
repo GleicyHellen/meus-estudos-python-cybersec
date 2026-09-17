@@ -1,14 +1,28 @@
-# Cifra de César em Python
-Este projeto implementa a clássica **Cifra de César** utilizando a linguagem Pyhton. Desenvolvido como parte dos meus estudos fundamentais em **Segurança da Informação**, o script demonstra como funciona a manipulação de dados em baixo nivel através da tabela ASCII.
+# 🔒 Meus Estudos de Criptografia Simétrica em Python
 
-## Tecnologias Utilizadas:
--**Python 3** (Lógica de programação,laços de repetição e condicionais)
--**Git e GitHub** (Controle de versão e portfólio)
+Este repositório centraliza meus estudos fundamentais em **Segurança da Informação e Programação**. Aqui, implemento e analiso algoritmos de criptografia clássica para entender a manipulação de dados em baixo nível e a evolução da segurança de dados.
 
-## Como Funciona
-O algoritmo recebe uma mensagem do usuário e aplica um "salto" matemático fixo no alfabeto:
-- Se o usuário digitar `REI` com uma chave de salto `3`, o sistema deslocará as letras gerando o texto cifrado `UHL`.
-- O código foi projetado para diferenciar letras maiúsculas de minúsculas e preservar espaços, números e símbolos especiais.
+## 🛠️ Tecnologias Utilizadas
+- **Python 3**: Utilização de laços de repetição (`for`), condicionais (`if/elif/else`), tratamento de strings e funções nativas como `ord()` e `chr()`.
+- **Git & GitHub**: Controle de versão, alinhamento de ramificações e gerenciamento de portfólio técnico.
 
-## ⚠️ Nota de Segurança (Análise Crítica)
-Como estudante de Segurança da Informação, tenho total consciência de que a Cifra de César é um método criptográfico **antigo e vulnerável**. Ele pode ser facilmente quebrado em milissegundos por um hacker utilizando **Ataques de Força Bruta (Brute Force)** ou **Análise de Frequência**. Este projeto possui fins estritamente educacionais para consolidar conceitos de criptografia simétrica clássica.
+---
+
+## 🧮 Projetos Implementados
+
+### 1. Cifra de César (`cifra_de_cesar.py`)
+O algoritmo recebe uma mensagem e aplica um "salto" matemático numérico fixo e estático em todo o alfabeto.
+* **Exemplo**: A mensagem `REI` com chave `3` desloca as letras gerando o texto cifrado `UHL`.
+
+### 2. Cifra de Vigenère (`cifra_de_vigenere.py`)
+Uma evolução direta da Cifra de César. Em vez de usar um número fixo, utiliza uma **palavra-chave secreta** onde cada letra dita um salto dinâmico diferente para a mensagem, utilizando a fórmula matemática do resto da divisão (`%`) com base no tamanho da chave (`len`).
+* **Exemplo**: A mensagem `REI` combinada com a palavra-chave `FOGO` altera a lógica do salto a cada caractere processado.
+
+---
+
+## ⚠️ Nota de Segurança (Análise Crítica de Vulnerabilidades)
+Como estudante de **Segurança da Informação**, tenho total consciência de que ambos os métodos criptográficos são **obsoletos e inseguros** para os padrões atuais (2026). 
+- A Cifra de César é facilmente quebrada em milissegundos por **Ataques de Força Bruta (Brute Force)**.
+- A Cifra de Vigenère, embora mascare a análise de frequência simples, é vulnerável a análises estatísticas avançadas (como o Exame de Kasiski) caso o texto cifrado seja longo.
+
+*Estes scripts possuem objetivos estritamente educacionais para consolidar conceitos de criptografia clássica antes do avanço para algoritmos modernos de mercado, como o AES (Advanced Encryption Standard).*
